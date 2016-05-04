@@ -27,3 +27,21 @@ speed = raw_input("Enter the length of each blink in seconds: ")
 ## Start Blink() function. Convert user input from strings to numeric data types and pass to Blink() as parameters
 Blink(int(iterations),float(speed))
         
+""This is a bit more basic:
+
+In terminal, type
+nano LED.py
+
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(18,GPIO.OUT)
+print "LED on"
+GPIO.output(18,GPIO.HIGH)
+time.sleep(1)
+print "LED off"
+GPIO.output(18,GPIO.LOW)
+
+to run the code, type:
+sudo python LED.py""
